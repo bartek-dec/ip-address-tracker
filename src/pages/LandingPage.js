@@ -1,10 +1,11 @@
 import React from 'react';
-import {Form} from '../components';
+import {Form, MapComp} from '../components';
 
 const LandingPage = () => {
     return (
         <main className='main'>
             <Form/>
+            <MapComp/>
         </main>
     );
 };

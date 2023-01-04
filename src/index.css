@@ -45,7 +45,7 @@ img {
 /*= Form
 /*==============*/
 .section {
-    height: 25rem;
+    height: 30rem;
     padding-top: 3rem;
     background-image: url("./images/pattern-bg.png");
     background-repeat: no-repeat;
@@ -80,7 +80,7 @@ img {
     color: var(--very-dark-gray);
 }
 
-.form-input:focus{
+.form-input:focus {
     outline: 2px solid var(--dark-gray);
     outline-offset: -2px;
 }
@@ -109,8 +109,13 @@ img {
     background-color: hsl(0, 0%, 27%);;
 }
 
-
-
+/*==============*/
+/*= MapComp
+/*==============*/
+.leaflet-container {
+    width: 100vw;
+    height: calc(100vh - 30rem);
+}
 
 
 
