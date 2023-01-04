@@ -7,7 +7,7 @@ const Form = () => {
             <h1 className='section-title'>IP Address Tracker</h1>
             <form className='form center'>
                 <input type='text' className='form-input'
-                placeholder='Search for any IP address or domain'/>
+                       placeholder='Search for any IP address or domain'/>
                 <button type='submit' className='btn'>
                     <GoChevronRight/>
                 </button>
