@@ -150,7 +150,7 @@ img {
 /*= MapComp
 /*==============*/
 .leaflet-container {
-    width: 100vw;
+    /*width: 100vw;*/
     height: calc(100vh - 30rem);
 }
 
@@ -173,6 +173,24 @@ img {
     border: 4px solid var(--dark-gray);
     border-top-color: var(--very-dark-gray);
     animation: spinner 0.6s linear infinite;
+}
+
+/*==============*/
+/*= Error
+/*==============*/
+.section-error {
+    height: calc(100vh - 30rem);
+    background-color: #d3d3d3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-heading {
+    text-align: center;
+    font-weight: 500;
+    color: var(--very-dark-gray);
 }
 
 @keyframes spinner {
