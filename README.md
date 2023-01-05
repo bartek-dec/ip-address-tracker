@@ -1,5 +1,9 @@
 # Frontend Mentor - IP address tracker
 
+( Important info from the author!!! If you want to download the source code and run it on your local machine
+, you need to create .env file in the root folder and add "REACT_APP_API_KEY" variable with your own api key
+ from IP Geolocation API by IPify).
+
 ![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
