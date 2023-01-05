@@ -150,8 +150,11 @@ img {
 /*= MapComp
 /*==============*/
 .leaflet-container {
-    /*width: 100vw;*/
     height: calc(100vh - 30rem);
+}
+
+.leaflet-popup-content {
+    font-size: 1.3rem !important;
 }
 
 /*==============*/

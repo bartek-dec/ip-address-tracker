@@ -1,24 +1,25 @@
-import React, {useState} from 'react';
+import React from 'react';
 import 'leaflet/dist/leaflet.css';
 import {attribution, url} from "../mapSettings";
 import icon from '../images/icon-location.svg';
 import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 import L from 'leaflet';
-
+import {useSelector} from "react-redux";
 
 const MapComp = () => {
-    const [position, setPosition] = useState({lat: 51.505, lng: -0.09})
-    // const position = [53.505, -0.09];
+    const {lat, lng, isp} = useSelector((state) => state.map);
+    const position = [lat, lng];
+    const zoomLevel = 16;
     const markerIcon = new L.Icon({
         iconUrl: icon
     });
 
     return (
-        <MapContainer center={position} zoom={16} scrollWheelZoom={true}>
+        <MapContainer center={position} zoom={zoomLevel} scrollWheelZoom={true}>
             <TileLayer attribution={attribution} url={url}/>
             <Marker position={position} icon={markerIcon}>
                 <Popup>
-                    A pretty CSS3 popup. <br/> Easily customizable.
+                    {isp}
                 </Popup>
             </Marker>
         </MapContainer>

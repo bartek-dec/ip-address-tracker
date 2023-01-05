@@ -1,26 +1,29 @@
 import React from 'react';
+import {useSelector} from "react-redux";
 
 const Card = () => {
+    const {ipAddress, city, postalCode, timezone, isp} = useSelector((state) => state.map);
+
     return (
         <article className='article-info'>
             <div className='info-container'>
                 <h3 className='info-header'>ip address</h3>
-                <h2 className='info-text'>192.212.174.101</h2>
+                <h2 className='info-text'>{ipAddress}</h2>
             </div>
 
             <div className='info-container'>
                 <h3 className='info-header'>location</h3>
-                <h2 className='info-text'>Brooklyn, NY 10001</h2>
+                <h2 className='info-text'>{city} {postalCode ? `, ${postalCode}` : ''}</h2>
             </div>
 
             <div className='info-container'>
                 <h3 className='info-header'>timezone</h3>
-                <h2 className='info-text'>utc-05:00</h2>
+                <h2 className='info-text'>UTC{timezone}</h2>
             </div>
 
             <div className='info-container'>
                 <h3 className='info-header'>isp</h3>
-                <h2 className='info-text'>SpaceX Starlink</h2>
+                <h2 className='info-text'>{isp}</h2>
             </div>
         </article>
     );
