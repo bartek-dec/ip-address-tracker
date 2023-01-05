@@ -155,6 +155,7 @@ img {
 /*==============*/
 .loading-container {
     height: calc(100vh - 30rem);
+    background-color: #d3d3d3;
 
     display: flex;
     justify-content: center;
