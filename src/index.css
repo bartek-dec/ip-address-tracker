@@ -139,7 +139,11 @@ img {
 
 .btn:hover {
     cursor: pointer;
-    background-color: hsl(0, 0%, 27%);;
+    background-color: hsl(0, 0%, 27%);
+}
+
+.btn:disabled {
+    background-color: hsl(0, 0%, 27%);
 }
 
 /*==============*/
